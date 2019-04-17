@@ -1,0 +1,19 @@
+dist: trusty
+addons:
+  apt:
+    packages:
+      - google-chrome-stable
+language: node_js
+node_js:
+  - "7"
+env:
+    # - EMBER_VERSION=default
+    - EMBER_VERSION=release
+matrix:
+  fast_finish: true
+  allow_failures:
+    - env: EMBER_VERSION=release
+install:
+    - npm install -e .
+script:
+    - npm start
