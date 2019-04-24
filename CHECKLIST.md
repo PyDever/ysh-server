@@ -6,4 +6,6 @@
 * fully implement secure cookies and sessions
 * implement management commands into `package.json`
 * organize `public/` into `styles/` and `scripts/` and `media/`
-* FIX THE FUCKING FRONT-END NOW
+
+* add picture gallery
+* normalize viewport styles
