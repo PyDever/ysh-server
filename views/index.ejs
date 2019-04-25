@@ -101,13 +101,26 @@
     <hr>
     <br><br><br><br><br>
 
-    <div class="division-bar">
-      <div class="container">
-        <ul>
-          <p>(808)222-3979</p>
-        </ul>
-      </div>
+  <div id="slideshow">
+    <div>
+     image 0
     </div>
+    <div>
+     image 1
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    $("#slideshow > div:gt(0)").hide();
+    setInterval(function() { 
+      $('#slideshow > div:first')
+        .fadeOut(1000)
+        .next()
+        .fadeIn(1000)
+        .end()
+        .appendTo('#slideshow');
+    },  3000);
+  </script>
 
   </body>
 </html>
