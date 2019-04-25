@@ -311,22 +311,6 @@ a {
   transition: background 0.5s;
 }
 
-/* Footer 
-.footer {
-  font-size: 14px;
-  color: white;
-  background-color: black;
-  margin-top: 500px;
-  width: fit-content;
-  flex-grow: 1;
-}
-.footer p {
-  height: 80px;
-  line-height: 80px;
-  margin: 0px;
-}
-*/
-
 /* Media Queries */
 @media (max-width: 500px) {
   .header h1 {
