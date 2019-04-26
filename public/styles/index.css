@@ -33,22 +33,39 @@ body {
 }
 
 
-#slideshow { 
-    margin: 50px auto; 
-    position: relative; 
-    width: 240px; 
-    height: 240px; 
-    padding: 10px; 
-    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+/* START slideshow */
+
+
+.gallery-container {
+  display: flex;
+  justify-content: center;
+}
+div.gallery {
+  margin: 15px;
+  border: 1px solid lightgrey;
+  float: left;
+  height: 300px;
+  width: 300px;
 }
 
-#slideshow > div { 
-    position: absolute; 
-    top: 10px; 
-    left: 10px; 
-    right: 10px; 
-    bottom: 10px; 
+div.gallery:hover {
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: lightgrey;
+  box-shadow: 10px 10px lightgrey;
 }
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 40px;
+  text-align: center;
+}
+
+/* END slideshow */
 
 
 .main-two {
@@ -247,6 +264,7 @@ h1 {
   transition: background 0.5s;
   font-size: 35px;
 }
+
 
 a {
   text-align: center;

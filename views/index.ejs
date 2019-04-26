@@ -5,10 +5,12 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,100' rel='stylesheet' type='text/css'>
     <link rel='stylesheet' href='styles/index.css' />
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
   </head>
   <body>
+  <script type="text/javascript" src="scripts/gallery.js"></script>
 
 
     <div class="header">
@@ -26,7 +28,7 @@
         <ul>
           <a href="#aboutsection">About</a>
           <a href="#aboutsection">Application</a>
-          <a href="#contact">Gallery</a>
+          <a href="#division-bar">Gallery</a>
           <a href="#contact">Contact</a>
         </ul>
       </div>
@@ -101,26 +103,46 @@
     <hr>
     <br><br><br><br><br>
 
-  <div id="slideshow">
-    <div>
-     image 0
-    </div>
-    <div>
-     image 1
-    </div>
-  </div>
 
-  <script type="text/javascript">
-    $("#slideshow > div:gt(0)").hide();
-    setInterval(function() { 
-      $('#slideshow > div:first')
-        .fadeOut(1000)
-        .next()
-        .fadeIn(1000)
-        .end()
-        .appendTo('#slideshow');
-    },  3000);
-  </script>
+
+    <div class="division-bar">
+      <div class="container">
+        <ul><a href="#division-bar">Gallery</a></ul></div>
+    </div>
+
+<hr>
+<div class="gallery-container">
+<div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="media/images/img1.jpg" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="desc">Some sort of project.</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="media/images/img2.jpg" alt="Forest" width="600" height="400">
+  </a>
+  <div class="desc">Another project that they did.</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_lights.jpg">
+    <img src="media/images/img3.jpg" alt="Northern Lights" width="600" height="400">
+  </a>
+  <div class="desc">This is yet another project.</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="media/images/img4.jpg" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc">And our last project here.</div>
+</div>
+</div>
+<hr>
+
+
 
   </body>
 </html>
