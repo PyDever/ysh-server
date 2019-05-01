@@ -1,7 +1,9 @@
 
 require('dotenv').config()
 
-const firewall_config = require('./server/config.js').firewall_config
+const firewall_config = require('./server/firewall.js').firewall_config
+const session_config = require('./server/session.js').session_config
+
 const express = require('express'),
           app = express(),
           session = require('express-session'),
@@ -12,12 +14,7 @@ const request = require('request')
 const nosql = require('nosql')
 const db = nosql.load('/server/database.nosql')
 
-app.use(session({
-  secret: process.env.KEY, 
-  resave: true, 
-  saveUninitialized: true
-}))
-
+app.use(session(session_config))
 app.use(lusca(firewall_config))
 
 app.use(express.static('public'))
