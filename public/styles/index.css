@@ -389,3 +389,87 @@ a {
 p {
   align-self: left;
 }
+
+
+
+
+/* Application form */
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+#application-hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+.signupbtn {
+  background-color: darkgrey;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+    color: white;
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: none;
+  background-color: black;
+  padding: 10px 20px;
+}
+
+.signupbtn:hover {
+  background: #117bff;
+  cursor: pointer;
+  transition: background 0.5s;
+}
+
+.signup {
+  float: center;
+}
+
+#application {
+  width: 50%;} 
+
+.app {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+/* Add padding to container elements */
+.application-container {
+  padding: 16px;
+  border: 1px black;
+}
+
+/* Clear floats */ /*
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+*/
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
