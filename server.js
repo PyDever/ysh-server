@@ -32,10 +32,10 @@ app.post('/', function (req, res) {
 		club: req.body.club
 	}
 	console.log(application_content)
-	
 })
 
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!')
 })
+
 
