@@ -23,6 +23,7 @@
     "ejs": "^2.6.1",
     "express": "^4.15.3",
     "express-session": "^1.15.6",
+    "helmet": "^3.18.0",
     "lusca": "^1.6.1",
     "nosql": "^6.1.0",
     "request": "^2.81.0"

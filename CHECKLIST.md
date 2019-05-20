@@ -1,7 +1,5 @@
 
-* add picture gallery
-* normalize viewport styles
-* add contact section
-* make links go somewhere (all of them)
-* fix server config
+* add session/cookies security/middlewares?
+* add CSRF protection/middlewares?
+* add TLS certificates and what not...?
 
